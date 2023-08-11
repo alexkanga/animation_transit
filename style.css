@@ -34,41 +34,9 @@ body{
     /* transform: translateX(500px) scale(1.2); */
    
     /* position:absolute; */
-    animation: move-the-letter 1s infinite;
+    animation: move-the-letter 3s infinite;
     /* transform-origin: center center; */
 }
-@keyframes move-the-letter {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  @keyframes move-the-first-letter {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: rotate(180deg)
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  
-
-  
-  /* @for $num from 1 through 6 {
-    .transit_rest_letter:nth-child(#{$num}) {
-      left: ($num - 1) * 30px;
-    }
-  } */
-
-
 
 .entertainement{
     border: 1px solid #FFF;
@@ -87,9 +55,44 @@ body{
     
     font-size: 1rem;
     font-weight: bold;
+    animation: entertainement 3s infinite;
     
 
 }
+
+@keyframes move-the-letter {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes move-the-first-letter {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+
+  @keyframes move-the-first-letter {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+  
+  
+  
+  /* @for $num from 1 through 6 {
+    .transit_rest_letter:nth-child(#{$num}) {
+      left: ($num - 1) * 30px;
+    }
+  } */
+
+
+
+
 
 
 
