@@ -17,26 +17,43 @@ body{
 .animation_wrapper{
     width: 50%;
     margin: auto;
+    
 }
 .transit_first_letter{
     color: #ec2b00 ;
     font-size: 12rem;
     text-transform: uppercase;
+    display: inline-block;
+    animation: move-the-first-letter 1s infinite;
     
 }
 .transit_rest_letter{
     color: #FFF ;
     font-size: 8rem;
+    display: inline-block;
+    /* transform: translateX(500px) scale(1.2); */
+   
     /* position:absolute; */
     animation: move-the-letter 1s infinite;
-    transform-origin: center center;
+    /* transform-origin: center center; */
 }
 @keyframes move-the-letter {
     0% {
       transform: translate(0, 0);
     }
     50% {
-      transform: translate(0, 50px);
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes move-the-first-letter {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: rotate(180deg)
     }
     100% {
       transform: translate(0, 0);
