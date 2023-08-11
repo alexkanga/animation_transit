@@ -27,7 +27,32 @@ body{
 .transit_rest_letter{
     color: #FFF ;
     font-size: 8rem;
+    /* position:absolute; */
+    animation: move-the-letter 1s infinite;
+    transform-origin: center center;
 }
+@keyframes move-the-letter {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 50px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+
+  
+  /* @for $num from 1 through 6 {
+    .transit_rest_letter:nth-child(#{$num}) {
+      left: ($num - 1) * 30px;
+    }
+  } */
+
+
+
 .entertainement{
     border: 1px solid #FFF;
     border-radius: 2px;
